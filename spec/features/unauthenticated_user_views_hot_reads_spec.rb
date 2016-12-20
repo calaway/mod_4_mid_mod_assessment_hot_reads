@@ -7,6 +7,7 @@ RSpec.feature "UnauthenticatedUserViewsHotReads", type: :feature do
 
       visit root_path
 
+      expect(page).to have_content "Hot Reads!"
       expect(page).to have_content "www.example.com/1"
     end
   end
